@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Parallax Scrolling Example</title>
+<style>
+    body {
+        background-color: #EEE; 
+        height: 10000px;  
+        background-repeat: repeat;  
+
+    }
+    #content { 
+        text-align: center; 
+    }
+ 
+
+    #background { 
+        background-position: center center;
+        background-size: 100%;
+        position: fixed;
+        top: 0;
+        left:0; 
+        width: 100vw;
+        height: 100vw;
+        z-index: -1; 
+        background-repeat: repeat;  
+
+        background-image: url("background.jpeg") ;
+    }  
+
+.spacer { 
+  height: 50px; 
+}
+
+.overlay { 
+    height: 20%;
+    width: 60%; 
+    text-align: center;  
+ }
+
+.download { 
+    height: 20%;
+        width: 100%; 
+
+    text-align: center;  
+
+  border: none;
+  color: transparent; 
+  text-align: center;    
+  transition-duration: 0.4s;
+  cursor: pointer;  
+  background-color: transparent; 
+  color: black;  
+ }
+
+
+ .description {    
+    text-align: center;  
+    color: white;  
+    margin: auto;
+    width: 100%; 
+
+ }
+
+.button { 
+  border: none;
+  color: transparent; 
+  text-align: center;    
+  transition-duration: 0.4s;
+  cursor: pointer;  
+  background-color: transparent;  
+  margin: 10px; 
+  padding: 10px; 
+  width: 40%; 
+
+
+}
+  
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.8); 
+  color: white; 
+}
+</style>
+</head>
+ 
+<body> 
+<div id="content"> 
+
+
+    <div class="spacer"> </div> 
+    <div class="spacer"> </div>
+
+
+    <img src="title.png" class ="overlay"/>   
+    <div class="spacer"> </div>
+
+    <div class="description"> 
+        <p>
+        <br> 
+    
+        the cut & paste orchestra is a suite of software instruments I made from samples recorded by myself & a few special friends  
+        <br>
+        <br>
+
+
+        the samples are all raw, dry, and unpredictably imperfect - qualities which lend themselves to authenticity & creativity in the otherwise sterile digital realm 
+        <br>
+        <br>
+
+        load them up with Kontakt or EXS24 (Logic's native sampler format also supported by Ableton), plug-in your MIDI keyboard, and let the sounds guide u 
+
+        <br>
+        <br> 
+        </p>  
+    </div>
+
+    <div class="spacer"> </div> 
+    <button class="button"> 
+        <img src="download1.png" class ="download"/>  
+    </button> 
+        <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+
+<div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+
+
+    <div class="spacer"> </div> 
+
+ 
+</div>
+ 
+<div id="background"> 
+
+<div id="background2"> 
+
+</div>  
+</div>   </div>  
+<script>
+    var background = document.querySelector("#background"); 
+ 
+    function setTranslate(xPos, yPos, el) {
+        el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+    }
+ 
+    window.addEventListener("DOMContentLoaded", scrollLoop, false);
+ 
+    var xScrollPosition;
+    var yScrollPosition;
+ 
+    function scrollLoop() {
+        xScrollPosition = window.scrollX;
+        yScrollPosition = window.scrollY;
+ 
+        setTranslate(0, yScrollPosition * -0.2, background); 
+ 
+        requestAnimationFrame(scrollLoop);
+    }
+ 
+</script>
+</body>
+</html>
