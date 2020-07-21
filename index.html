@@ -5,25 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Parallax Scrolling Example</title>
 <style>
+    html {
+        height: 100%;
+    }
     body { 
-        height: 10000px;   
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
 
     }
     #content { 
+        box-sizing: border-box;
+        margin: 0 2vw;
+        min-height: 100vw;
         text-align: center; 
     }
  
 
     #background { 
-        background-position: center center;
+        background-position: center top;
         background-size: 100%; 
         position: fixed;
         top: 0;
         left:0; 
         width: 100vw;
-        height: 100vw; 
+        height: 200%; 
         z-index: -1; 
-        background-repeat: repeat;   
+        background-repeat: repeat-y;   
         background-image: url("background.jpeg") ;
     }  
 
@@ -123,75 +131,7 @@
 
     <div class="spacer"> </div> 
 
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-
-<div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
-
-
-    <div class="spacer"> </div> 
+    <div class="spacer"> </div>
 
  
 </div>
