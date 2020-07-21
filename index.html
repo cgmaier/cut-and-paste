@@ -5,10 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Parallax Scrolling Example</title>
 <style>
-    body {
-        background-color: #EEE; 
-        height: 10000px;  
-        background-repeat: repeat;  
+    body { 
+        height: 10000px;   
 
     }
     #content { 
@@ -18,18 +16,19 @@
 
     #background { 
         background-position: center center;
-        background-size: 100%;
+        background-size: 100%; 
         position: fixed;
         top: 0;
         left:0; 
         width: 100vw;
-        height: 100vw;
+        height: 100vw; 
         z-index: -1; 
-        background-repeat: repeat;  
-
+        background-repeat: repeat;   
         background-image: url("background.jpeg") ;
     }  
 
+ 
+ 
 .spacer { 
   height: 50px; 
 }
@@ -197,11 +196,7 @@
  
 </div>
  
-<div id="background"> 
-
-<div id="background2"> 
-
-</div>  
+<div id="background"> </div>    
 </div>   </div>  
 <script>
     var background = document.querySelector("#background"); 
